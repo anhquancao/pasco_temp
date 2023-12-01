@@ -210,7 +210,7 @@
                     <!-- </div> -->
                     
                
-                    <div id="carouselExampleIndicators" class="carousel carousel-dark" data-bs-ride="true">
+                    <div id="carouselExampleIndicators" class="carousel carousel-dark" data-bs-ride="false">
                         <div class="carousel-indicators" id="carouselIndicators"></div>
                         <div class="carousel-inner" id="carouselInner">
                             <div class="alert alert-light position-absolute top-1 start-50 translate-middle" style="top: 30px;" role="alert">
@@ -504,7 +504,7 @@
 
     
         
-    const frame_ids = [1240, 1700, 1795, 2240, 2720, 2815, 3115];
+    const frame_ids = [1700, 1795, 2025, 2240, 2575, 2720, 2815, 3115];
 
     const input_model_paths = frame_ids.map(id => `imgs/ours3_input_${id}_3.pcd`);
     const semantic_model_paths = frame_ids.map(id => `imgs/ours3_semantic_${id}_3.pcd`);
