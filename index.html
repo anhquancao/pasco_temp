@@ -451,7 +451,6 @@
     // Call this function to switch to a different scene
     function switchScene(containerId, modelPath) {
 
-        console.log(containerId, modelPath)
         showProgressBar(); // Show the progress bar
         
     
@@ -528,6 +527,7 @@
         const nextSlideId = e.relatedTarget.id;
         const nextContainerId = 'sceneContainer' + nextSlideId.charAt(nextSlideId.length - 1);
         model_paths = updateModelPaths(); // Update model paths based on current tab
+        
         let model_path = model_paths[parseInt(nextSlideId.charAt(nextSlideId.length - 1)) - 1];
         if (!document.getElementById(nextContainerId).hasChildNodes()) {
             switchScene(nextContainerId, model_path);
@@ -565,7 +565,7 @@
             case "Vox. Unc.":
                 model_paths = vox_unc_model_paths;
                 break;
-            case "Ins. Unc.":
+            case 'Ins. Unc. (Show "thing" class)':
                 model_paths = ins_unc_model_paths;
                 break;
         }
