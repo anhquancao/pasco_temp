@@ -174,39 +174,48 @@
             </div>   -->
         </div>  
 
-        <div class="row novel-depth-item position-relative mt-4">
+        <div class="row novel-depth-item position-relative">
             
             <div class="  px-md-5 mb-5 text-center mx-auto" style="height: 500px;">
+                
+
                 <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-pills nav-3d justify-content-center">
+                            <li class="nav-item">
+                              <a class="nav-link ">Input</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link">Semantic</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                              <a class="nav-link" href="#">Instance</a>
+                            </li> -->
+                            <li class="nav-item">
+                              <a class="nav-link active">Panoptic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Vox. Unc.</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link">Ins. Unc. (Show "thing" class)</a>
+                              </li>
+                        </ul>
+                    </div>
                     
-                    <ul class="nav nav-tabs nav-fill">
-                        <li class="nav-item">
-                          <a class="nav-link ">Input</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link">Semantic</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                          <a class="nav-link" href="#">Instance</a>
-                        </li> -->
-                        <li class="nav-item">
-                          <a class="nav-link active">Panoptic</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Vox. Unc.</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link">Ins. Unc. (Show "thing" class)</a>
-                          </li>
-                    </ul>
+                    
                     <!-- <div id="progressBarContainer" style="display:none;"> -->
                         <!-- <div id="progressBar" style="width:0%; height: 20px; background-color: #4CAF50;"></div> -->
                     
                     <!-- </div> -->
-                  
+                    
+               
                     <div id="carouselExampleIndicators" class="carousel carousel-dark" data-bs-ride="true">
                         <div class="carousel-indicators" id="carouselIndicators"></div>
                         <div class="carousel-inner" id="carouselInner">
+                            <div class="alert alert-light position-absolute top-1 start-50 translate-middle" style="top: 30px;" role="alert">
+                                <h6>Click and drag to interact</h6>
+                            </div>
                             <div id="progressBarContainer" class="spinner-border text-primary" role="status" style="display: none;">
                                 <span class="visually-hidden">Loading...</span>
                             </div>
@@ -227,7 +236,7 @@
         </div>
 
        
-        <div style="height: 20px;"></div>
+        <div style="height: 100px;"></div>
         <div class="row novel-depth-item position-relative mt-4">
             <div class="col-md-6 text-center mx-auto">
                 <h3 class="text-center"><i class="fa-solid fa-file"></i> Abstract</h3>
@@ -548,8 +557,8 @@
     });
 
     $(document).ready(function() {
-        $(".nav-tabs .nav-item .nav-link").click(function() {
-            $(".nav-tabs .nav-item .nav-link").removeClass("active");
+        $(".nav-3d .nav-item .nav-link").click(function() {
+            $(".nav-3d .nav-item .nav-link").removeClass("active");
             $(this).addClass("active");
             currentTab = $(this).text().trim();
             model_paths = updateModelPaths(); // Update model paths based on clicked tab
