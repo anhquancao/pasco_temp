@@ -69,7 +69,7 @@
             /* width: 100%; */
             /* background-color: #ddd; */
             position: absolute;
-            top:8%;
+            top:3px;
             left: 3px;
         }
     </style>
@@ -117,7 +117,7 @@
                             <span>Paper</span>
                         </a>
                     
-                    <a class="btn btn-dark" href="https://arxiv.org/abs/2212.02501" target="_blank">
+                    <a class="btn btn-dark" href="" target="_blank">
                     <!-- <img src="imgs/paper_icon.png" height="80px"> -->
                         <span class="icon">
                             <i class="ai ai-arxiv"></i>
@@ -155,7 +155,12 @@
             <!-- <h3 class="text-center">Teaser</h3> -->
             <div class="px-md-5 mb-5  text-center mx-auto">
                 <!-- <h6 class="text-center">Panoptic Scene Completion with Uncertainty Awareness</h6> -->
-                <img src="imgs/psc_1.GIF" style="margin-top: 0px; width: 100%;"  class=" rounded img-fluid ">
+                <!-- <img src="imgs/psc_1.GIF" style="margin-top: 0px; width: 100%;"  class=" rounded img-fluid "> -->
+                <div>
+                    <video poster="" autoplay="" muted loop=""  style="width: 100%;" style="pointer-events: none;">
+                        <source src="imgs/psc_teaser.mp4" type="video/mp4">
+                    </video>             
+                </div>         
             </div>  
             <!-- <div class="col-md-8 text-center mx-auto mt-3">
                 <h6 class="text-center">Robustness evaluation on Robo3D</h6>
@@ -190,14 +195,16 @@
                     </ul>
                     <!-- <div id="progressBarContainer" style="display:none;"> -->
                         <!-- <div id="progressBar" style="width:0%; height: 20px; background-color: #4CAF50;"></div> -->
-                    <div id="progressBarContainer" class="spinner-border text-primary" role="status" style="display: none;">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
+                    
                     <!-- </div> -->
                   
                     <div id="carouselExampleIndicators" class="carousel carousel-dark" data-bs-ride="true">
                         <div class="carousel-indicators" id="carouselIndicators"></div>
-                        <div class="carousel-inner" id="carouselInner"></div>
+                        <div class="carousel-inner" id="carouselInner">
+                            <div id="progressBarContainer" class="spinner-border text-primary" role="status" style="display: none;">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
