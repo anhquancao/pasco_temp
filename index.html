@@ -78,6 +78,13 @@
         #carouselExampleIndicators .carousel-item {
             transition: none !important;
         }
+
+        .indicator-button {
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+
+       
     </style>
     
 </head>
@@ -113,7 +120,7 @@
 
 
         <div class="row mt-4">
-            <div class="col-md-4 mx-auto">
+            <div class=" mx-auto">
                 <div style="text-align: center;">
                     <a class="btn btn-dark" href="" target="_blank">
                         <!-- <img src="imgs/paper_icon.png" height="80px"> -->
@@ -157,9 +164,9 @@
                 <img src="imgs/teaser_v2.png" style="margin-top: 10px;"  class=" rounded img-fluid ">
             </div>  
         </div>   -->
-        <div class="row novel-depth-item position-relative mt-4">
+        <div class="row mt-4">
             <!-- <h3 class="text-center">Teaser</h3> -->
-            <div class="px-md-5 mb-5  text-center mx-auto">
+            <div class="mb-4 col-md-10 mx-auto text-center ">
                 <!-- <h6 class="text-center">Panoptic Scene Completion with Uncertainty Awareness</h6> -->
                 <!-- <img src="imgs/psc_1.GIF" style="margin-top: 0px; width: 100%;"  class=" rounded img-fluid "> -->
                 <div>
@@ -174,10 +181,10 @@
             </div>   -->
         </div>  
 
-        <div class="row novel-depth-item position-relative">
+        <div class="row">
             
-            <div class="  px-md-5 mb-5 text-center mx-auto" style="height: 500px;">
-                
+            <div class="  col-md-10 mx-auto mx-auto">
+
 
                 <div class="card">
                     <div class="card-header">
@@ -204,31 +211,38 @@
                     </div>
                     
                     
-                    <!-- <div id="progressBarContainer" style="display:none;"> -->
-                        <!-- <div id="progressBar" style="width:0%; height: 20px; background-color: #4CAF50;"></div> -->
-                    
-                    <!-- </div> -->
-                    
+                    <div class="card-body">
                
-                    <div id="carouselExampleIndicators" class="carousel carousel-dark" data-bs-ride="false">
-                        <div class="carousel-indicators" id="carouselIndicators"></div>
-                        <div class="carousel-inner" id="carouselInner">
-                            <div class="alert alert-light position-absolute top-1 start-50 translate-middle" style="top: 30px;" role="alert">
-                                <h6>Click and drag to interact</h6>
+                        <div id="carouselExampleIndicators" class="carousel carousel-dark" data-bs-ride="false">
+                            <!-- <div class="carousel-indicators" id="carouselIndicators"></div> -->
+                            
+                            <div class="carousel-inner" id="carouselInner">
+                                <div class="alert alert-light position-absolute top-1 start-50 translate-middle" style="top: 30px;" role="alert">
+                                    <h6>Click and drag to interact</h6>
+                                </div>
+                                <div id="progressBarContainer" class="spinner-border text-primary" role="status" style="display: none;">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
                             </div>
-                            <div id="progressBarContainer" class="spinner-border text-primary" role="status" style="display: none;">
-                                <span class="visually-hidden">Loading...</span>
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
+                    
+                    <div class="card-footer text-center">
+                        <div class="custom-indicators" id="carouselIndicators">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0">Scene 1</button> -->
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">Scene 2</button> -->
+                            <!-- Add more buttons as needed -->
+                        </div>
+                    </div>
+                    
                     
                     
                 </div>
@@ -236,8 +250,8 @@
         </div>
 
        
-        <div style="height: 100px;"></div>
-        <div class="row novel-depth-item position-relative mt-4">
+    
+        <div class="row mt-4">
             <div class="col-md-6 text-center mx-auto">
                 <h3 class="text-center"><i class="fa-solid fa-file"></i> Abstract</h3>
                 <p  style="text-align: justify;">
@@ -259,7 +273,7 @@
 
        
 
-        <div class="row px-md-5 mb-5 mt-4">
+        <div class="row col-md-10 mx-auto mb-5 mt-4">
             <h3 class="text-center"> <i class="fab fa-youtube"></i> Demo</h3>
             <div class="ratio ratio-16x9">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/z392JF_j-rs?si=PK4jJuRneYOFB9me" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -267,7 +281,7 @@
         </div>
         
 
-        <div class="row px-md-5 mb-5">      
+        <div class="row col-md-10 mx-auto mb-5">      
             <h3 class="text-center"><i class="fa-solid fa-microchip "></i> Overview of our method</h3>    
             <div>
                 <img src="imgs/arch.png" style="width: 100%;" class="rounded img-fluid" alt="Overview of our method">                
@@ -280,7 +294,7 @@
             </div>           
         </div>
 
-        <div class="row px-md-5 mb-5">  
+        <div class="row col-md-10 mx-auto mb-5">  
             <h3 class="text-center"><i class="fa-solid fa-square-poll-vertical"></i> Panoptic Scene Completion Comparision</h3>   
             <!-- <div>
                 <img src="imgs/quals.png" style="width: 100%;" class="rounded img-fluid" alt="Overview of our method">                
@@ -292,7 +306,7 @@
             </div>  
         </div>
 
-        <div class="row px-md-5 mb-5">  
+        <div class="row col-md-10 mx-auto mb-5">  
             <h3 class="text-center"><i class="fa-solid fa-circle-exclamation"></i> Uncertinaty Estimation Comparision</h3>   
             <div>
                 <video poster="" autoplay="" muted loop=""  style="width: 100%;" style="pointer-events: none;">
@@ -301,8 +315,8 @@
             </div>  
         </div>
 
-        <div class="row px-md-5 mb-5">  
-            <h3><i class="fa-solid fa-helmet-safety"></i> Robusness Evaluation on Robo3D</h3>   
+        <div class="row col-md-10 mx-auto mb-5">  
+            <h3 class="text-center"><i class="fa-solid fa-helmet-safety"></i> Robusness Evaluation on Robo3D</h3>   
             <div>
                 <img src="imgs/uncertainty.png" style="width: 100%;" class="rounded img-fluid" alt="Overview of our method">                
             </div>
@@ -314,8 +328,9 @@
         </div>
         
         
-        <div class="row px-md-5 mb-5">  
-            <h3 class="text-center"><i class="fa-solid fa-location-crosshairs"></i> Citation</h3>   
+        <div class="row col-md-10 mx-auto mb-5">  
+            <h3 class="text-center"><i class="fa-solid fa-location-crosshairs"></i> Citation</h3>
+           
             <div>
                     If you find this project useful for your research, please cite
                     <div class="card-block" style="background-color: #f5f5f5; padding:8px;">
@@ -333,9 +348,11 @@
             </div>
         </div>
 
-        <div class="row px-md-5 mb-5">
-            <h3><i class="fa-sharp fa-solid fa-building-columns"></i> Acknowledgements</h3>
-            <div>The research was supported by the French project SIGHT (ANR-20-CE23-0016), the ERC Starting Grant SpatialSem (101076253), and the SAMBA collaborative project co-funded by BpiFrance in the Investissement d’Avenir Program. Computation was per- formed using HPC resources from GENCI–IDRIS (2023-AD011014102, AD011012808R2). We thank all Astra-Vision members for their valu- able feedbacks, including Andrei Bursuc for his excellent suggestions and Tetiana Martyniuk for her kind proofreading. </div>
+        <div class="row mb-5">
+            <div class="col-md-10 mx-auto">
+                <h3 class="text-center"><i class="fa-sharp fa-solid fa-building-columns"></i> Acknowledgements</h3>
+                <div>The research was supported by the French project SIGHT (ANR-20-CE23-0016), the ERC Starting Grant SpatialSem (101076253), and the SAMBA collaborative project co-funded by BpiFrance in the Investissement d’Avenir Program. Computation was per- formed using HPC resources from GENCI–IDRIS (2023-AD011014102, AD011012808R2). We thank all Astra-Vision members for their valu- able feedbacks, including Andrei Bursuc for his excellent suggestions and Tetiana Martyniuk for her kind proofreading. </div>
+            </div>
         </div>
 
     </div>
@@ -515,13 +532,32 @@
     const indicators = document.getElementById('carouselIndicators');
     const carouselInner = document.getElementById('carouselInner');
 
+    // Remove existing indicators
+    while (carouselIndicators.firstChild) {
+        indicators.removeChild(carouselIndicators.firstChild);
+    }
+
+    // frame_ids.forEach((id, index) => {
+    //     const button = document.createElement('button');
+    //     button.type = 'button';
+    //     button.className = 'btn btn-secondary';
+    //     button.setAttribute('data-bs-target', '#carouselExampleIndicators');
+    //     button.setAttribute('data-bs-slide-to', index.toString());
+    //     button.textContent = 'Scene ' + (index + 1);
+
+    //     indicators.appendChild(button);
+    // });
+
     frame_ids.forEach((id, index) => {
         // Create carousel indicator
         const indicator = document.createElement('button');
         indicator.type = 'button';
+        indicator.textContent = 'Scene ' + (index + 1);
+        indicator.className = 'btn btn-secondary btn-sm indicator-button';
         indicator.dataset.bsTarget = '#carouselExampleIndicators';
         indicator.dataset.bsSlideTo = index;
         indicator.setAttribute('aria-label', `Slide ${index + 1}`);
+        
         if (index === 0) indicator.classList.add('active');
         indicators.appendChild(indicator);
 
@@ -554,6 +590,16 @@
         if (!document.getElementById(nextContainerId).hasChildNodes()) {
             switchScene(nextContainerId, model_path);
         }
+
+        const indicators = document.querySelectorAll('#carouselIndicators button');
+        indicators.forEach((indicator, index) => {
+            let item_id = parseInt(nextSlideId.charAt(nextSlideId.length - 1)-1)
+            if (index === item_id) {
+                indicator.classList.add('active');
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
     });
 
     $(document).ready(function() {
